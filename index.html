@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #2563EB, #9333EA, #EC4899);
+      color: white;
+      text-align: center;
+    }
+
+    .container {
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    h1 {
+      font-size: 80px;
+      letter-spacing: 5px;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 15px 35px;
+      font-size: 18px;
+      border: none;
+      border-radius: 30px;
+      background: white;
+      color: #2563EB;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.1);
+      background: #f1f5f9;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>WELCOME</h1>
+    <button onclick="goToMenu()">Masuk ke Menu</button>
+  </div>
+
+  <script>
+    function goToMenu() {
+      window.location.href = "menu.html";
+    }
+  </script>
+</body>
+</html>
